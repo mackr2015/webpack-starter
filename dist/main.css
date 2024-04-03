@@ -1,0 +1,31 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body, p, a, span, li {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+body {
+  background: pink;
+  font-size: 16px;
+}
+
+h1 {
+  color: #0e2509;
+}
