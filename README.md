@@ -5,9 +5,19 @@
 - Webpack [style-loader](https://webpack.js.org/loaders/style-loader/#recommend)
 - Webpack [sass-loader](https://webpack.js.org/loaders/sass-loader/)
 
+
+### Update 2025
+- updated all npm dependecy packages to the latest
+- added cssmin script for minimizing css in dist/ ready for production
+- updated sass with the latest `@forward` and `@use`
+- check the package.json for multiple option on how to run the project
+
+
 ### Install
 
 - `npm install` to install dependencies
+
+### Explanation
 - by default webpack will look for `src` to compile the code into `dist`
 - create configuration file in the project root `webpack.config.js`
 - inside of `webpack.config.js` Set 'mode' option to 'development' or 'production'
