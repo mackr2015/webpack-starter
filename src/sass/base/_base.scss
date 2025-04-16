@@ -1,12 +1,19 @@
-@import "variables";
-@import "typography";
+@use "variables" as *;
+@use "typography" as *;
 
 
 body {
-    background: pink;
+    background: $bg_color;
     font-size: 16px;
+    color: $tx_color;
 }
 
-h1 {
+p,span,li {
+    font-family: $font_main;
     color: $tx_color;
+}
+
+a {
+    color: $link_color;
+    font-weight: bold;
 }

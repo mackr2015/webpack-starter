@@ -1,4 +1,4 @@
-
+@use "variables" as *;
 
 $font_main: 'Poppins', sans-serif;
 $font_heading: 'Montserrat', sans-serif;
@@ -6,11 +6,10 @@ $font_heading: 'Montserrat', sans-serif;
 
 h1,h2,h3,h4 {
     font-family: $font_heading;
+    color: $tx_color;
 }
 
-body,p,a,span,li {
-    font-family: $font_main;
-}
+
 
 h1 {
     font-size: 40px;

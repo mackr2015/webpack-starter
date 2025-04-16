@@ -1,12 +1,13 @@
 {
   "name": "webpack-starter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "- SASS, JS, Live Reload\r - current version [Webpack v5](https://webpack.js.org/concepts/)",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --open",
     "watch": "webpack --watch",
-    "dev": "webpack --config webpack.config.js"
+    "dev": "webpack --config webpack.config.js",
+    "cssmin": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,22 +17,22 @@
   "author": "Mack Raicevic makiraicevic@gmail.com",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "css-loader": "^6.8.1",
-    "css-minimizer-webpack-plugin": "^5.0.1",
-    "mini-css-extract-plugin": "^2.7.6",
-    "postcss": "^8.4.31",
-    "postcss-loader": "^7.3.3",
-    "postcss-pxtorem": "^6.0.0",
+    "autoprefixer": "^10.4.21",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
+    "postcss-pxtorem": "^6.1.0",
     "postcss-scss": "^4.0.9",
     "rucksack-css": "^1.0.2",
-    "sass": "^1.69.3",
-    "sass-loader": "^13.3.2",
-    "style-loader": "^3.3.3",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
+    "sass": "^1.86.3",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1",
     "webpack-fix-style-only-entries": "^0.6.1",
-    "webpack-merge": "^5.10.0"
+    "webpack-merge": "^6.0.1"
   }
 }
