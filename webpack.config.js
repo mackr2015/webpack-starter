@@ -9,10 +9,13 @@ const mainCSS = path.join(__dirname, 'src/sass/main.scss');
 module.exports = {
     mode: 'development',
     watch: true,
-    entry: [ './src/index.js' ],
+    entry: {
+        main: './src/index.js'
+    },
     output: {
-        filename: 'main.js',
+        filename: 'index.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true, // Cleans the dist folder before each build
     },
     devServer: {
         static: {
@@ -47,6 +50,8 @@ module.exports = {
          new HtmlWebpackPlugin({
             template: './src/index.html', // your source HTML
             filename: 'index.html',       // output file in dist/
+            inject: 'body', // or 'head', if you want it in <head>
+            chunks: ['main'], // only include the 'main' chunk
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',

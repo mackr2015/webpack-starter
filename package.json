@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack serve",
     "watch": "webpack serve --watch",
-    "dev": "webpack --config webpack.config.js",
+    "dev": "webpack --mode development --config webpack.config.js",
+    "build": "webpack --mode production --config webpack.config.js",
     "cssmin": "webpack --mode production"
   },
   "repository": {
