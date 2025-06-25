@@ -6,34 +6,23 @@
 - Webpack [sass-loader](https://webpack.js.org/loaders/sass-loader/)
 
 
-### Update 2025
+### Updates 2025
 - updated all npm dependecy packages to the latest
 - added cssmin script for minimizing css in dist/ ready for production
 - updated sass with the latest `@forward` and `@use`
-- check the package.json for multiple option on how to run the project
+- check the package.json scripts for multiple options on how to run the project
+    #### Issues
+    - Live reload only worked for JS and SASS changes — not for HTML
+    - Adding `index.html` to `entry` caused a Webpack build error
+    - `HtmlWebpackPlugin` alone didn't trigger live reload on HTML edits
+    #### Fixes
+    - installed and configured `npm install --save-dev html-webpack-plugin` 
+    - imported scss to index.js so the webpack.config.js has one entry point `./src/index.js`
+    - live reload fix for `./src/index.html` was done with manual watching in the devServer webpack.config.js section
 
 
 ### Install
 
 - `npm install` to install dependencies
+- check updates and install all npm dependecies `ncu` then `ncu -u` to upgrade and then `npm install`
 
-### Explanation
-- by default webpack will look for `src` to compile the code into `dist`
-- create configuration file in the project root `webpack.config.js`
-- inside of `webpack.config.js` Set 'mode' option to 'development' or 'production'
-- setup the 'script' inside of package.json for 'dev','build' etc... . then we can run `npm run dev`
-- setup webpack-dev-server, gives ability to live reload on changes and provides webpack server for local development
-- install webpack `npm install --save-dev webpack-dev-server`
-- in `webpack.config.js` tell dev server where to look for files 
-    ``` Example: tell webpack server to serve files from dist director on localhost:8080
-    devServer: {
-        static: './dist',
-    },  
-    ```
-- Let's add a script to package.json to easily run the dev server as well:
-    ``` "start": "webpack serve --open"```
-- webpack [Sass Loader](https://webpack.js.org/loaders/sass-loader/)
-- install `npm install sass-loader sass css-loader style-loader --save-dev`
-- follow with the package.json install all packages
-- check the config for compiling sass with loaders
-- run webpack server for live reloading and server run `npm run start`
