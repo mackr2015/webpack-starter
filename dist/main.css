@@ -1,1 +1,35 @@
-h1,h2,h3,h4{font-family:"Montserrat",sans-serif;color:#333}h1{font-size:40px}h2{font-size:30px}h3{font-size:25px}body{background:#808073;font-size:16px;color:#333}p,span,li{font-family:"Poppins",sans-serif;color:#333}a{color:#002bb9;font-weight:bold}
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/sass/main.scss ***!
+  \*************************************************************************************************************/
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+body {
+  background: rgb(128, 128, 115);
+  font-size: 16px;
+  color: #333;
+}
+
+p, span, li {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+a {
+  color: #002bb9;
+  font-weight: bold;
+}
