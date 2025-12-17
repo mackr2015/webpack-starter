@@ -12,6 +12,10 @@ module.exports = (env = {}) => {
     const isWordPress = env.wordpress === 'true' || env.wordpress === true;
 
 
+    const outputPath = isWordPress
+    ? path.resolve(__dirname, 'wp-css-build')
+    : path.resolve(__dirname, 'dist');
+
     const plugins = [
         new HtmlWebpackPlugin({
             template: './src/index.html',
@@ -44,7 +48,7 @@ module.exports = (env = {}) => {
 
         output: {
             filename: 'index.js',
-            path: path.resolve(__dirname, 'dist'),
+            path: outputPath,
             clean: true, // Cleans the dist folder before each build
         },
 
