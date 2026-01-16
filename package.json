@@ -1,6 +1,6 @@
 {
   "name": "webpack-starter",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "- SASS, JS, Live Reload\r - current version [Webpack v5](https://webpack.js.org/concepts/)",
   "main": "index.js",
   "scripts": {
@@ -8,14 +8,15 @@
     "watch": "webpack serve --watch",
     "dev": "webpack --mode development --config webpack.config.js",
     "build": "webpack --mode production --config webpack.config.js",
-    "cssmin": "webpack --mode production"
+    "cssmin": "webpack --mode production",
+    "cssmin:wp": "webpack --mode production --env wordpress=true"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/mackr2015/webpack-starter"
   },
   "keywords": [],
-  "author": "Mack Raicevic makiraicevic@gmail.com",
+  "author": "Marijan Raicevic makiraicevic@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.4.21",
